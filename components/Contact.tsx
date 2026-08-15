@@ -9,14 +9,39 @@ export default function Contact() {
     "idle" | "sending" | "success" | "error"
   >("idle");
 
-  function handleSubmit(event: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
     setStatus("sending");
 
-    setTimeout(() => {
+    const form = event.currentTarget;
+    const formData = new FormData(form);
+
+    const data = {
+      name: formData.get("name"),
+      email: formData.get("email"),
+      message: formData.get("message"),
+    };
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to send message.");
+      }
+
+      form.reset();
       setStatus("success");
-    }, 800);
+    } catch (error) {
+      console.error(error);
+      setStatus("error");
+    }
   }
 
   return (
