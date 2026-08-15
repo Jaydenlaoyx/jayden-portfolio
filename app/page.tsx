@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import About from "@/components/About";
 
 export default function Home() {
   return (
@@ -17,14 +18,7 @@ export default function Home() {
         </h2>
       </section>
 
-      <section
-        id="about"
-        className="mx-auto min-h-screen max-w-6xl px-6 py-32"
-      >
-        <h2 className="text-4xl font-semibold">
-          About me
-        </h2>
-      </section>
+      <About />
 
       <section
         id="experience"
