@@ -1,6 +1,10 @@
+import Navbar from "@/components/Navbar";
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-black text-white">
+      <Navbar />
+
       <section className="mx-auto flex min-h-screen max-w-6xl flex-col justify-center px-6">
         <p className="mb-6 text-sm uppercase tracking-[0.3em] text-zinc-400">
           Software Engineer
@@ -39,6 +43,24 @@ export default function Home() {
       >
         <h2 className="text-4xl font-semibold">
           Selected work
+        </h2>
+      </section>
+
+      <section
+        id="about"
+        className="mx-auto min-h-screen max-w-6xl px-6 py-32"
+      >
+        <h2 className="text-4xl font-semibold">
+          About me
+        </h2>
+      </section>
+
+      <section
+        id="experience"
+        className="mx-auto min-h-screen max-w-6xl px-6 py-32"
+      >
+        <h2 className="text-4xl font-semibold">
+          Experience
         </h2>
       </section>
 
