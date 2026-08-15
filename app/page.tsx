@@ -3,6 +3,8 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Projects from "@/components/Projects";
 import Experience from "@/components/Experience";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -17,14 +19,9 @@ export default function Home() {
 
       <Experience />
 
-      <section
-        id="contact"
-        className="mx-auto min-h-screen max-w-6xl px-6 py-32"
-      >
-        <h2 className="text-4xl font-semibold">
-          Let's talk.
-        </h2>
-      </section>
+      <Contact />
+
+      <Footer />
     </main>
   );
 }
