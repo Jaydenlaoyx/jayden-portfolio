@@ -154,13 +154,20 @@ export default function Contact() {
           </button>
 
           {status === "success" && (
-            <p className="text-sm text-[var(--muted)]">
+            <p
+              role="status"
+              aria-live="polite"
+              className="text-sm text-[var(--muted)]"
+            >
               Thanks! Your message has been sent.
             </p>
           )}
 
           {status === "error" && (
-            <p className="text-sm text-red-400">
+            <p
+              role="alert"
+              className="text-sm text-red-400"
+            >
               Something went wrong. Please try again.
             </p>
           )}
