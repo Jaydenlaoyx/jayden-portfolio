@@ -8,7 +8,7 @@ export default function Projects() {
       className="mx-auto max-w-6xl px-6 py-32 sm:py-40"
     >
       <div className="mb-16">
-        <p className="mb-6 text-sm font-medium uppercase tracking-[0.3em] text-zinc-500">
+        <p className="mb-6 text-sm font-medium uppercase tracking-[0.3em] text-[var(--muted)]">
           Selected work
         </p>
 
@@ -16,7 +16,7 @@ export default function Projects() {
           Things I&apos;ve built.
         </h2>
 
-        <p className="mt-6 max-w-2xl text-base leading-8 text-zinc-400 sm:text-lg">
+        <p className="mt-6 max-w-2xl text-base leading-8 text-[var(--muted)] sm:text-lg">
           A selection of personal and professional projects exploring
           different technologies, ideas and problems.
         </p>

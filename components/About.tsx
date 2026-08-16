@@ -37,7 +37,7 @@ export default function About() {
             A software engineer who enjoys building things from the ground up.
           </motion.h2>
 
-          <div className="mt-8 max-w-2xl space-y-6 text-base leading-8 text-zinc-400 sm:text-lg">
+          <div className="mt-8 max-w-2xl space-y-6 text-base leading-8 text-[var(--muted)] sm:text-lg">
             <p>
               I&apos;m a software engineer with professional experience
               building web applications across both backend and frontend
@@ -75,7 +75,7 @@ export default function About() {
             {skills.map((skill) => (
               <span
                 key={skill}
-                className="rounded-full border border-zinc-800 px-4 py-2 text-sm text-zinc-300 transition-colors hover:border-zinc-600 hover:text-white"
+                className="rounded-full border border-[var(--border)] px-4 py-2 text-sm text-zinc-300 transition-colors hover:border-zinc-600 hover:text-[var(--foreground)]"
               >
                 {skill}
               </span>

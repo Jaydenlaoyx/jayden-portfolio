@@ -13,7 +13,7 @@ export default function Hero() {
         </div>
       <div className="mx-auto w-full max-w-6xl px-6">
         <div className="max-w-4xl">
-          <p className="mb-6 text-sm font-medium uppercase tracking-[0.3em] text-zinc-400">
+          <p className="mb-6 text-sm font-medium uppercase tracking-[0.3em] text-[var(--muted)]">
             Software Engineer
           </p>
 
@@ -32,7 +32,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.15, ease: "easeOut" }}
-            className="mt-8 max-w-2xl text-lg leading-8 text-zinc-400 sm:text-xl"
+            className="mt-8 max-w-2xl text-lg leading-8 text-[var(--muted)] sm:text-xl"
             >
             Software engineer with experience across Java, Spring Boot,
             React and TypeScript. I enjoy turning ideas into useful,
@@ -54,7 +54,7 @@ export default function Hero() {
 
             <a
               href="#contact"
-              className="rounded-full border border-zinc-700 px-6 py-3 text-sm font-medium text-white transition hover:border-zinc-500"
+              className="rounded-full border border-zinc-700 px-6 py-3 text-sm font-medium text-[var(--foreground)] transition hover:border-zinc-500"
             >
               Let's talk
             </a>

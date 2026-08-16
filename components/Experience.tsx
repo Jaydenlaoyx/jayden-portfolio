@@ -10,7 +10,7 @@ export default function Experience() {
       className="mx-auto max-w-6xl px-6 py-32 sm:py-40"
     >
       <div className="mb-16">
-        <p className="mb-6 text-sm font-medium uppercase tracking-[0.3em] text-zinc-500">
+        <p className="mb-6 text-sm font-medium uppercase tracking-[0.3em] text-[var(--muted)]">
           Experience
         </p>
 
@@ -35,10 +35,10 @@ export default function Experience() {
               }}
               className="relative pl-10"
             >
-              <span className="absolute left-0 top-1.5 h-4 w-4 rounded-full border-2 border-zinc-600 bg-black" />
+              <span className="absolute left-0 top-1.5 h-4 w-4 rounded-full border-2 border-zinc-600 bg-[var(--background)]" />
 
               <div className="grid gap-6 md:grid-cols-[180px_1fr]">
-                <p className="text-sm text-zinc-500">
+                <p className="text-sm text-[var(--muted)]">
                   {item.period}
                 </p>
 
@@ -47,11 +47,11 @@ export default function Experience() {
                     {item.role}
                   </h3>
 
-                  <p className="mt-1 text-base text-zinc-400">
+                  <p className="mt-1 text-base text-[var(--muted)]">
                     {item.company}
                   </p>
 
-                  <p className="mt-6 max-w-2xl text-sm leading-7 text-zinc-400 sm:text-base">
+                  <p className="mt-6 max-w-2xl text-sm leading-7 text-[var(--muted)] sm:text-base">
                     {item.description}
                   </p>
 
@@ -59,7 +59,7 @@ export default function Experience() {
                     {item.technologies.map((technology) => (
                       <span
                         key={technology}
-                        className="rounded-full border border-zinc-800 px-3 py-1 text-xs text-zinc-500"
+                        className="rounded-full border border-[var(--border)] px-3 py-1 text-xs text-[var(--muted)]"
                       >
                         {technology}
                       </span>

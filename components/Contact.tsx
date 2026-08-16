@@ -59,7 +59,7 @@ export default function Contact() {
             Let&apos;s talk.
           </h2>
 
-          <p className="mt-6 max-w-md text-base leading-8 text-zinc-400 sm:text-lg">
+          <p className="mt-6 max-w-md text-base leading-8 text-[var(--muted)] sm:text-lg">
             Have an opportunity, a project idea, or just want to say hello?
             I&apos;d love to hear from you.
           </p>
@@ -71,7 +71,7 @@ export default function Contact() {
                 href={social.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block text-zinc-400 transition-colors hover:text-white"
+                className="block text-[var(--muted)] transition-colors hover:text-[var(--foreground)]"
             >
                 {social.name} ↗
             </a>
@@ -90,7 +90,7 @@ export default function Contact() {
           <div>
             <label
               htmlFor="name"
-              className="mb-2 block text-sm text-zinc-400"
+              className="mb-2 block text-sm text-[var(--muted)]"
             >
               Name
             </label>
@@ -100,7 +100,7 @@ export default function Contact() {
               name="name"
               type="text"
               required
-              className="w-full border-b border-zinc-800 bg-transparent px-0 py-3 text-white outline-none transition-colors placeholder:text-zinc-700 focus:border-zinc-400"
+              className="w-full border-b border-[var(--border)] bg-transparent px-0 py-3 text-[var(--foreground)] outline-none transition-colors placeholder:text-[var(--muted)] focus:border-zinc-400"
               placeholder="Your name"
             />
           </div>
@@ -108,7 +108,7 @@ export default function Contact() {
           <div>
             <label
               htmlFor="email"
-              className="mb-2 block text-sm text-zinc-400"
+              className="mb-2 block text-sm text-[var(--muted)]"
             >
               Email
             </label>
@@ -118,7 +118,7 @@ export default function Contact() {
               name="email"
               type="email"
               required
-              className="w-full border-b border-zinc-800 bg-transparent px-0 py-3 text-white outline-none transition-colors placeholder:text-zinc-700 focus:border-zinc-400"
+              className="w-full border-b border-[var(--border)] bg-transparent px-0 py-3 text-[var(--foreground)] outline-none transition-colors placeholder:text-[var(--muted)] focus:border-zinc-400"
               placeholder="you@example.com"
             />
           </div>
@@ -126,7 +126,7 @@ export default function Contact() {
           <div>
             <label
               htmlFor="message"
-              className="mb-2 block text-sm text-zinc-400"
+              className="mb-2 block text-sm text-[var(--muted)]"
             >
               Message
             </label>
@@ -136,7 +136,7 @@ export default function Contact() {
               name="message"
               required
               rows={5}
-              className="w-full resize-none border-b border-zinc-800 bg-transparent px-0 py-3 text-white outline-none transition-colors placeholder:text-zinc-700 focus:border-zinc-400"
+              className="w-full resize-none border-b border-[var(--border)] bg-transparent px-0 py-3 text-[var(--foreground)] outline-none transition-colors placeholder:text-[var(--muted)] focus:border-zinc-400"
               placeholder="Tell me a little about what you'd like to discuss..."
             />
           </div>
@@ -154,7 +154,7 @@ export default function Contact() {
           </button>
 
           {status === "success" && (
-            <p className="text-sm text-zinc-400">
+            <p className="text-sm text-[var(--muted)]">
               Thanks! Your message has been sent.
             </p>
           )}

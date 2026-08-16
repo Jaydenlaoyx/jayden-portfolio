@@ -21,15 +21,15 @@ export default function ProjectCard({
         duration: 0.6,
         delay: index * 0.1,
       }}
-      className="group relative overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-950 p-8 transition-colors duration-300 hover:border-zinc-600"
+      className="group relative overflow-hidden rounded-2xl border border-[var(--border)] bg-[var(--background)] p-8 transition-colors duration-300 hover:border-zinc-600"
     >
       <div className="flex min-h-[320px] flex-col">
         <div className="flex items-start justify-between">
-          <span className="text-sm text-zinc-600">
+          <span className="text-sm text-[var(--muted)]">
             0{index + 1}
           </span>
 
-          <span className="text-zinc-600 transition-transform duration-300 group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:text-white">
+          <span className="text-[var(--muted)] transition-transform duration-300 group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:text-[var(--foreground)]">
             ↗
           </span>
         </div>
@@ -39,7 +39,7 @@ export default function ProjectCard({
             {project.title}
           </h3>
 
-          <p className="mt-4 max-w-lg text-sm leading-7 text-zinc-400">
+          <p className="mt-4 max-w-lg text-sm leading-7 text-[var(--muted)]">
             {project.description}
           </p>
 
@@ -47,7 +47,7 @@ export default function ProjectCard({
             {project.technologies.map((technology) => (
               <span
                 key={technology}
-                className="rounded-full bg-zinc-900 px-3 py-1 text-xs text-zinc-400"
+                className="rounded-full bg-[var(--border)] px-3 py-1 text-xs text-[var(--muted)]"
               >
                 {technology}
               </span>
@@ -60,7 +60,7 @@ export default function ProjectCard({
                 href={project.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-zinc-400 transition-colors hover:text-white"
+                className="text-[var(--muted)] transition-colors hover:text-[var(--foreground)]"
               >
                 GitHub ↗
               </a>
@@ -71,7 +71,7 @@ export default function ProjectCard({
                 href={project.demo}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-zinc-400 transition-colors hover:text-white"
+                className="text-[var(--muted)] transition-colors hover:text-[var(--foreground)]"
               >
                 Live demo ↗
               </a>
