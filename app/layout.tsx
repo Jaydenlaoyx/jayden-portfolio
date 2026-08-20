@@ -14,6 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://jayden-portfolio-snowy.vercel.app/"),
+
   title: {
     default: "Jayden Lao | Software Engineer",
     template: "%s | Jayden Lao",
